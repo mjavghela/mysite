@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>templatesis working .</title>
+    <style>
+        .div{
+            background-color:#8ee4ddde;
+            border: 4px  solid;
+            width:70%;
+            margin: 0px 0px 0px 100px;
+        }
+        textarea{
+            background-color:#8ee4ddde;
+            border: 2px  solid;
+            padding: 0px 3px;
+            margin: 3px 7px;
+
+        }
+    </style>
+</head>
+<form action="spi" method="post" >{% csrf_token %}
+    <div style="background-color:red;">
+    <div class="div">
+
+    <h1 >Hello</h1>
+    <h1>Enter the last sem SPI : </h1>
+    <textarea name="lastspi" style=" width: 168px; height: 27px;"> </textarea>
+        </div>
+        <br>
+    <div class="div">
+    <h1> Enter the mark of internal (comma seprate.):</h1>
+    <h3>Enter the list wise mark : 1. JAVA 2. SE 3. TOC 4. WT 5. DOS: </h3>
+    <textarea name="mark" style=" width: 372px; height: 45px;"></textarea>
+    </div>
+        <br>
+    <div class="div">
+    <h1> Enter the point of subject (comma seprate[","]):</h1>
+    <h3>Enter the list wise : 1. JAVA 2. SE 3. TOC 4. WT 5. DOS: </h3>
+    <textarea name="point" style=" width: 372px; height: 45px;"></textarea>
+        </div>
+        <br>
+
+    <input type="checkbox" name="spic" style="text-align: center; margin:3px;">SPI count <br>
+    <button type="submit" style="margin:3px;">submit</button>
+    </div>
+</form>
+</body>
+</html>
